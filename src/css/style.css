@@ -1,0 +1,325 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.cards-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .section {
+    margin-bottom: 40px;
+  }
+  
+  .section-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #f0f0f0;
+  }
+  
+  /* Grid para os cards */
+  .cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+  }
+  
+  /* Container para o card horizontal */
+  .horizontal-card-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
+    .cards-grid {
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .cards-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  /* Mantenha o resto do seu CSS existente */
+.container {
+    display: grid;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 10px;
+  }
+  
+  /* CARD COMUM */
+  .card {
+    width: 100%;
+    max-width: 280px;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+  }
+  .card:hover {
+    transform: translateY(-3px);
+    cursor: pointer;
+  }
+  
+  /* RESTANTE DO CSS: SEM MUDANÇAS */
+  .card-image {
+    position: relative;
+    height: 180px;
+    overflow: hidden;
+  }
+  .card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .dias-noites {
+    position: absolute;
+    bottom: 8px;
+    left: 10px;
+    background-color: #3F95FA;
+    color: white;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 4px 10px;
+    border-radius: 4px;
+  }
+  .card-content { 
+    padding: 16px;
+ }
+
+.pre-titulo {
+    font-size: 12px;
+    color: #666;
+    margin-bottom: 4px;
+    font-weight: 600;
+}
+
+.card-title {
+    font-size: 18px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 10px;
+    line-height: 1.2;
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    gap: 8px;
+}
+
+.nota {
+    background-color: #00AA8D;
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 2px 6px;
+    border-radius: 4px;
+}
+
+.stars {
+    display: flex;
+    color: #FA8E04;
+    font-size: 16px;
+}
+
+.empty-star {
+    color: #E0E0E0;
+}
+
+.card-description {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 4px;
+    line-height: 1.4;
+}
+
+.tag {
+    display: inline-block;
+    background-color: #f2f2f2;
+    color: #666;
+    font-size: 12px;
+    padding: 4px 10px;
+    border-radius: 4px;
+    margin-top: 10px;
+    border: 1px solid #e0e0e0;
+}
+
+.card-separator {
+    height: 1px;
+    background-color: #e0e0e0;
+    margin: 16px 0;
+}
+
+.preco-label {
+    font-size: 12px;
+    color: #666;
+    margin-bottom: 4px;
+}
+
+.preco {
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 4px;
+}
+
+.moeda {
+    font-size: 14px;
+    color: #333;
+    margin-right: 2px;
+    font-weight: 600;
+}
+
+.valor {
+    font-size: 28px;
+    font-weight: 700;
+    color: #333;
+}
+
+.taxas {
+    font-size: 12px;
+    color: #999;
+}
+
+.passaporte {
+    display: flex;
+    align-items: center;
+    margin-top: 16px;
+    padding: 10px;
+    background-color: #FFF5F5;
+    border-radius: 4px;
+}
+
+.passaporte-icon {
+    margin-right: 10px;
+}
+
+.icon-box {
+    width: 20px;
+    height: 20px;
+    background-color: #FF6666;
+    border-radius: 4px;
+}
+
+.passaporte-text {
+    font-size: 12px;
+    color: #FF6666;
+}
+
+
+.horizontal-card {
+    grid-column: 1 / -1;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    width: 590px;
+    transition: transform 0.3s ease;
+}
+
+.horizontal-card:hover{
+    transform: translateY(-3px);
+    cursor: pointer;
+}
+
+
+.horizontal-card-content {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    background: linear-gradient(90deg, #f5f0ff 0%, #ffffff 100%);
+}
+
+.icon-container {
+    position: relative;
+    width: 200px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-circle {
+    width: 150px;
+    height: 150px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+}
+
+.atendente-icon {
+    width: 60px;
+    height: 60px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%235000ca' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='8' r='7'%3E%3C/circle%3E%3Cpath d='M5 21v-2a7 7 0 0 1 14 0v2'%3E%3C/path%3E%3Cpath d='M3 8a2 2 0 0 1 2-2h.5'%3E%3C/path%3E%3Cpath d='M21 8a2 2 0 0 0-2-2h-.5'%3E%3C/path%3E%3C/svg%3E");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.icon-decoration {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #f0e6ff;
+    clip-path: polygon(0 0, 100% 0, 50% 100%, 0 100%);
+    z-index: 1;
+}
+
+.text-content {
+    padding: 20px 30px;
+    flex: 1;
+}
+
+.horizontal-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 10px;
+    line-height: 1.3;
+}
+
+.horizontal-description {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+    line-height: 1.5;
+    max-width: 500px;
+}
+
+.access-button {
+    background-color: #5000ca;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 8px 20px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.access-button:hover {
+    background-color: #4000a0;
+}
