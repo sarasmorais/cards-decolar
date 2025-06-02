@@ -1,12 +1,74 @@
-# React + Vite
+# ✈️ Cards Decolar - Viagens React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Cards Decolar** é um projeto inspirado no layout e estilo da seção de **ofertas de viagem da página Decolar.com**, recriado com **HTML**, **JavaScript** e **React**.
 
-Currently, two official plugins are available:
+A aplicação exibe uma galeria de cards com destinos turísticos, promovendo experiências visuais modernas e interativas para usuários interessados em viagens.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🎯 Objetivo
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+O objetivo deste projeto é apresentar uma interface atrativa e funcional que simula a exibição de ofertas de viagem. Utilizando React, o sistema organiza destinos em componentes reutilizáveis, com foco em desempenho, responsividade e design intuitivo.
+
+---
+
+## ✨ Funcionalidades
+
+- 🧳 Lista de cards com destinos turísticos
+- 💵 Informações sobre preço, localização e descontos
+- 🌍 Layout responsivo inspirado na Decolar.com
+- ⚛️ Estrutura em componentes reutilizáveis com React
+
+---
+
+## 🛠 Tecnologias Utilizadas
+
+- React (via Vite)
+- JavaScript (ES6+)
+- HTML5
+- CSS3 / Flexbox
+
+---
+
+## 🚀 Como rodar o projeto
+
+1. **Clone o repositório**:
+   ```bash
+   git clone https://github.com/sarasmorais/cards-decolar.git
+   ```
+
+2. **Acesse o diretório**:
+   ```bash
+   cd cards-decolar
+   ```
+
+3. **Instale as dependências**:
+   ```bash
+   npm install
+   ```
+
+4. **Inicie o servidor local**:
+   ```bash
+   npm run dev
+   ```
+
+5. Acesse no navegador:
+   ```
+   http://localhost:5173
+   ```
+
+---
+
+## 📄 Licença
+
+Distribuído sob a licença MIT.  
+Consulte o arquivo [LICENSE](./LICENSE) para mais detalhes.
+
+---
+
+🎨 Projeto inspirado na seção de cards de viagem da [Decolar.com](https://www.decolar.com/)
+
+---
+
+Feito por Sara Morais
+Orientado por Luan Oliveira
